@@ -5,8 +5,7 @@ color = ["RoyalBlue", "MediumSpringGreen", "Brown", "Magenta", "Linen", "Goldenr
 angle = [0, 90, 180, 270]
 
 tim = t.Turtle()
-tim.shape("circle")
-tim.width(20)
+tim.pensize(15)
 tim.speed("normal")
 step = 50
 
