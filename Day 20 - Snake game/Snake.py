@@ -16,11 +16,17 @@ class Snake:
 
     def body_snake(self):
         for i in body:
-            tim = Turtle(shape="square")
-            tim.color("white")
-            tim.penup()
-            tim.goto(i)
-            self.segment.append(tim)
+            self.add_segment(i)
+
+    def add_segment(self, position):
+        tim = Turtle(shape="square")
+        tim.color("white")
+        tim.penup()
+        tim.goto(position)
+        self.segment.append(tim)
+
+    def extend(self):
+        self.add_segment(self.segment[-1].position())
 
     def move(self):
         # forward function
